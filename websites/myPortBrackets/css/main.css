@@ -1,0 +1,266 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #252627;
+
+}
+
+#particle{
+  position: absolute;
+  height: 95%;
+  width: 98%;
+  background: dark;
+}
+
+
+/* ------------------------------  inicio do header -----------------------------------    */
+header {
+    /* posicionamento */
+    position: relative;
+
+    display: block;
+    float: left;
+    /* modelo do bloco */
+
+    /*border: 1px solid blue ;*/
+    width: 99%;
+    height: 15%;
+
+    margin: 0.1%;
+    padding: 0.1%;
+}
+
+.logo{
+    /* modelo do bloco */
+    /*border: 1px solid green;*/
+
+    width: 95%;
+    height: 90%;
+
+    padding: 0.3%;
+    margin: 0.3%;
+}
+
+.logo-letras {
+
+    /*border: 1px solid green;*/
+    display: block;
+
+    float: left;
+    width: 15%;
+    height: 90%;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+.logo-letras-img-j{
+    position: relative;
+    margin: 1%;
+    padding: 1%;
+
+    border-radius: 50px 15px;
+
+    width: 45%;
+    height: 97%;
+
+    animation-name: animationjota;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*animation-timing-function: linear;*/
+
+}
+.logo-letras-img-b{
+    position: relative;
+    margin: 1%;
+    padding: 1%;
+
+    width: 45%;
+    height: 97%;
+
+    animation-name: animationb;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*animation-timing-function: linear;*/
+}
+
+@keyframes animationjota {
+  to {
+    left: 50%;
+    background: red;
+    border-radius: 15px 50px ;
+
+
+  }
+  from {
+    left: -1%;
+    background: white;
+    border-radius: 50px 15px ;
+  }
+}
+@keyframes animationb {
+  to {
+    left: -50%;
+    background: white;
+    border-radius: 50px 15px ;
+  }
+  from {
+    position: relative;
+    left: 1%;
+    background: red;
+    border-radius: 15px 50px ;
+  }
+}
+
+#logo-hx-solution {
+    /**/
+    position: relative;
+    /*border: 1px solid blue;*/
+
+    /**/
+    display: block;
+    float: left;
+
+    width: 65%;
+    height: 90%;
+
+    text-align: center;
+    margin: 0.5%;
+    padding: 1%;
+
+    bottom: 30%;
+
+    /**/
+    color: #b4b4b4;
+    font-family: 'nosifer', cursive;
+    font-size: 300%;
+}
+/* ------------------------------  Inicio da navegação -----------------------------------    */
+
+.nav-bar {
+    position: relative;
+    background-color: #aaa2a2;
+    border-radius: 15px 25px 25px 15px;
+    opacity: 0.5;
+    display: block;
+    float: left;
+
+    width: 7.5%;
+    height: 70%;
+    display: inline-block;
+
+    margin: 1%;
+    padding: 1%;
+}
+
+.nav-bar ul{
+    list-style: none;
+    /*border: 1px solid blue;*/
+
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    margin: 5%;
+}
+
+.nav-bar li {
+    text-align: center;
+    /*border: 0.1px solid blue;*/
+    margin-bottom: 10%;
+}
+.nav-bar i {
+    color: #000;
+    margin-top: 10%;
+    padding-bottom: 5%;
+}
+
+.nav-bar a{
+  /*width:100%;*/
+  overflow:hidden;
+}
+
+.nav-bar span{
+    position: relative;
+    visibility: hidden;
+    color: #000;
+    font-family: 'nosifer', cursive;
+    font-size: 70%;
+
+    /* efeito slide left-right*/
+    left: -200%;
+    transition: 0.8s;
+}
+
+.nav-bar a:hover span{
+  visibility: visible;
+  left: -15%;
+}
+
+/* ----------------- inicio do aside --------- */
+
+.sideLeft {
+  /*background: #f0fc00;*/
+  position: relative;
+
+  display: block;
+  float: left;
+
+  border: 1px solid pink;
+
+  width: 40%;
+  height: 70%;
+
+  margin: 1%;
+  padding: 1%;
+
+}
+
+aside h3 {
+  color: white;
+}
+
+aside h6 {
+  color: white;
+}
+
+/* ----------------- inicio do section --------- */
+
+section {
+  position: relative;
+  display: block;
+
+  /*background: #52d623;*/
+  border: 1px solid green;
+
+  float: left;
+
+  width: 40%;
+  height: 65%;
+
+  margin: 1%;
+  padding: 1%;
+
+}
+
+/* ----------------- inicio do Footer --------- */
+footer {
+  position:fixed;
+
+  top: 96%;
+  width: 100%;
+
+  /*border: 1px solid red;*/
+  background-color: rgb(75, 71, 69);
+
+  text-align: center;
+  opacity: 0.5;
+}
+footer span {
+  color: white;
+  font-family: 'Ceviche One', cursive;
+  font-size: 125%;
+}
